@@ -7,11 +7,18 @@
     "test": "echo \"Error: no test specified\" && exit 1",
     "start": "node index.js",
     "format": "npx prettier --write .",
-    "check": "npx prettier --check ."
+    "check": "npx prettier --check .",
+    "lint": "npx eslint-config-prettier index.js"
   },
   "author": "",
   "license": "ISC",
   "devDependencies": {
+    "eslint": "^8.33.0",
+    "eslint-config-prettier": "^8.6.0",
+    "eslint-config-standard": "^17.0.0",
+    "eslint-plugin-import": "^2.27.5",
+    "eslint-plugin-n": "^15.6.1",
+    "eslint-plugin-promise": "^6.1.1",
     "prettier": "2.8.3"
   }
 }
