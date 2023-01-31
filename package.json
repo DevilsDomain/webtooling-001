@@ -10,6 +10,14 @@
     "check": "npx prettier --check .",
     "lint": "npx eslint-config-prettier index.js"
   },
+  "husky": {   
+    "hooks": {  
+      "pre-commit": "lint-staged"        
+    }
+  },
+  "lint-staged": {    
+    "src/**/*.{ts,css,html}": [ "npx prettier --check ."]    
+    },
   "author": "",
   "license": "ISC",
   "devDependencies": {
@@ -19,6 +27,10 @@
     "eslint-plugin-import": "^2.27.5",
     "eslint-plugin-n": "^15.6.1",
     "eslint-plugin-promise": "^6.1.1",
+    "husky": "^8.0.3",
+    "lint-staged": "^13.1.0",
     "prettier": "2.8.3"
   }
+
+
 }
